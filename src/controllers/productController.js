@@ -1,4 +1,5 @@
-import { instance } from "../../server.js"
+import { instance } from "../../index.js"
+
 
 export const processPayment = async (req, res) => {
     const options = {
