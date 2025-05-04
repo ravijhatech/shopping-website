@@ -6,7 +6,7 @@ dotenv.config();
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect("mongodb+srv://ravipratihast71:jPoRfADyx0J54rU3@cluster0.hkwcuwh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/ApnaShppongMart");
+    const conn = await mongoose.connect("mongodb+srv://ravipratihast71:tgFqicGvh13RKUj5@cluster0.hkwcuwh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/shoppingMartDB");
   } catch (err) {
     console.error('MongoDB connection error:', err);
 
