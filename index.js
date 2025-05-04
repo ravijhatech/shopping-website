@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import connectDB from "./src/db/db config.js";
 dotenv.config({path:'.env'})
 
+const port =process.env.PORT||6000
 export const instance = new Razorpay({
     key_id:process.env.ROZOPAY_API_KEY,
     key_secret:process.env.ROZOPAY_SECRET_KEY
@@ -11,8 +12,8 @@ export const instance = new Razorpay({
 connectDB();
 
 
-app.listen(process.env.PORT,()=>{
-console.log(`server is running ${process.env.PORT}`);
+app.listen(port,()=>{
+console.log(`server is running ${port}`);
 
 })
 
