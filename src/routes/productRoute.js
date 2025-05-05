@@ -31,7 +31,7 @@ router.route("/verify-otp").post(verifyOtp);
 router.route("/reset-password").post(changePasswordByEmail);
 
 router.route("/register").post(register);
-router.route("/").post(login);
+router.route("/login").post(login);
 router.route("/logout").post(logout);
 router.route("/check-user").get(CheckLogedInUser);
 router.route("/resend-otp").post(ResendOTP);
